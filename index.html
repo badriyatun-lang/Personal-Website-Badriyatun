@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Branding - Badriyatun Nikmah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Badriyatun Nikmah</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#sertifikat">Sertifikat</a></li>
+    <li><a href="#proyek">Proyek Saya</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</nav>
+  <header class="hero scroll-hidden" id="home">
+    <div class="hero-content">
+  <div class="image-box">
+    <img src="foto2.png" alt="Foto Badriyatun" class="profile-pic" />
+  </div>
+  <div class="text-box">
+    <h1>Halo, I'm Badriyatun Nikmah<br><span class="text"></span></h1>
+    <p>Mahasiswa Sistem Informasi yang bersemangat mengeksplorasi teknologi untuk menciptakan solusi digital bermanfaat dan berdampak positif bagi masyarakat.  🌐</p>
+</div>
+
+  </header>
+ <section class="story scroll-hidden" id="about">
+  <div class="story-content">
+    <div class="story-text">
+      <h2>About Me</h2>
+      <p>
+        Halo, Saya <strong>Badriyatun Nikmah</strong><br>
+        Biasa dikenal dengan Nikmah. Saya merupakan mahasiswi semester 3 di Universitas Pendidikan Ganesha (Undiksha),jurusan Teknik Informatika, program studi Sistem Informasi. Saat ini saya masih dalam proses mengeksplorasi dan mengembangkan minat saya dalam dunia IT.
+      </p>
+
+       <div class="about-buttons">
+        <a href="#" id="galeri-btn" class="btn">Hobi🤍</a> 
+        <a href="CV.pdf" target="_blank" class="btn">Lihat CV</a>
+        <a href="http://www.linkedin.com/in/Nikmah237" target="_blank" class="btn">LinkedIn</a>
+      </div>
+    </div>
+
+
+    <div class="story-image">
+      <img src="Foto2.jpg" alt="Foto Profil" />
+    </div>
+  </div>
+</section>
+
+
+<section class="sertifikat-dashboard scroll-hidden" id="sertifikat">
+  <h2 class="sertifikat-title">Sertifikat</h2>
+
+  <div class="sertifikat-cards">
+    <div class="sertifikat-card scroll-hidden">
+      <a href="Belajar-Dasar-Manajemen-Proyek.pdf" target="_blank">
+        <img src="Belajar-Dasar-Manajemen-Proyek-page-0001.jpg" alt="Belajar Dasar Manajemen Proyek" />
+        <h3>Belajar Dasar Manajemen Proyek</h3>
+      </a>
+    </div>
+
+    <div class="sertifikat-card scroll-hidden">
+      <a href="Memulai-Pemrograman-Dengan-C.pdf" target="_blank">
+        <img src="Memulai-Pemograman-Dengan-C-page-0001.jpg" alt="Memulai Pemrograman Dengan C" />
+        <h3>Memulai Pemrograman Dengan C</h3>
+      </a>
+    </div>
+
+    <div class="sertifikat-card scroll-hidden">
+      <a href="Memulai-Pemrograman-Dengan-Java.pdf" target="_blank">
+        <img src="Memulai-Pemograman-Dengan-Java-page-0001.jpg" alt="Memulai Pemrograman Dengan Java" />
+        <h3>Memulai Pemrograman Dengan Java</h3>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="projects-section scroll-hidden" id="proyek">
+  <h2 class="projects-title">Proyek Saya</h2>
+  <p class="projects-desc">
+    Beberapa hasil karya dan proyek digital yang pernah saya buat selama proses belajar dan eksplorasi di dunia teknologi 💡
+  </p>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="jelajah.png" alt="Proyek Jelajah Bali" class="project-img">
+      <div class="project-content">
+        <h3>🌴 Jelajah Bali 2024</h3>
+        <p>Website informasi destinasi wisata di Bali yang dikembangkan dengan pendekatan desain responsif dan pengalaman pengguna yang menarik.</p>
+        <a href="https://sites.google.com/student.undiksha.ac.id/jelajahbali24/home" target="_blank" class="btn">Lihat Proyek</a>
+      </div>
+    </div>
+<div class="project-card">
+  <img src="kalkulator.png" alt="Kalkulator BBI" class="project-img"> 
+  <div class="project-content">
+    <h3>⚖️ Kalkulator Berat Badan Ideal (BBI)</h3>
+    <p>Aplikasi web sederhana untuk menghitung estimasi Berat Badan Ideal (BBI) menggunakan Rumus Broca, dikembangkan dengan HTML, CSS, dan JavaScript.</p>
+    <a href="#" class="btn" onclick="tampilkanKalkulator(event)">Coba Kalkulator</a>
+  </div>
+</div>
+<section class="kalkulator-section" id="kalkulator">
+  
+  <div class="kalkulator-container">
+    <span class="close-btn-kalkulator" onclick="tutupKalkulator()">&times;</span> 
+
+    <h2 class="kalkulator-title">Kalkulator Berat Badan Ideal (BBI)</h2>
+    <p class="kalkulator-desc">
+      Mari hitung estimasi berat badan ideal Anda.
+    </p>
+
+    <div class="input-group">
+      <label for="tinggi">Tinggi Badan (cm):</label>
+      <input type="number" id="tinggi" placeholder="Contoh: 170" required>
+    </div>
+
+    <div class="input-group">
+      <label for="gender">Jenis Kelamin:</label>
+      <select id="gender" required>
+        <option value="">-- Pilih --</option>
+        <option value="pria">Pria</option>
+        <option value="wanita">Wanita</option>
+      </select>
+    </div>
+
+    <button class="btn hitung-btn" onclick="hitungBBI()">Hitung BBI</button>
+
+    <div class="result-box" id="hasilBBI">
+      <p>Berat Badan Ideal Anda:</p>
+      <span id="bbiValue">--</span>
+    </div>
+    </div>
+</section>
+
+</div> </div> </div> </section> 
+</section>
+</div>
+</div> </div> </section> <section class="contact-section scroll-hidden" id="contact">
+  <h2>✨ Contact ✨</h2>
+  <p class="contact-desc">
+    Terima kasih sudah berkunjung! Mari terhubung untuk berdiskusi, berkolaborasi, atau sekadar berbagi inspirasi 💬
+  </p>
+
+  <div class="contact-container">
+    <a href="mailto:badriatunnikmah@gmail.com" target="_blank" class="contact-card email">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+      <h3>Email</h3>
+      <p>badriatunnikmah@gmail.com</p>
+    </a>
+
+    <a href="https://wa.me/6281331957776" target="_blank" class="contact-card whatsapp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      <h3>WhatsApp</h3>
+      <p>Klik untuk chat langsung 📱</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/Nikmah237" target="_blank" class="contact-card linkedin">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" />
+      <h3>LinkedIn</h3>
+      <p>Terhubung secara profesional 💼</p>
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Badriyatun Nikmah</p>
+  </footer>
+<div id="hobiModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Hobi Saya 🤍</h2>
+    <div class="hobi-gallery">
+      <img src="perjalanan1.jpg" class="hobi-img" alt="Hobi 1">
+      <img src="perjalanan2.jpg" class="hobi-img" alt="Hobi 2">
+      <img src="perjalanan3.jpg" class="hobi-img" alt="Hobi 3">
+      <img src="perjalanan4.jpg" class="hobi-img" alt="Hobi 4">
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".text", {
+    strings: ["Mahasiswa Sistem Informasi", "Membangun Masa Depan dengan Kreativitas dan Teknologi"],
+    typeSpeed: 80,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+</body>
+</html>
+<script src="script.js"></script>
